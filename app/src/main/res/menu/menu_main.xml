@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--만약에(ifRoom) 공간이 있다면 표시되는 메뉴를 만들고 아이콘(이미지)를 입힘-->
+    <item
+        android:id="@+id/menu2"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="menu2"
+        app:showAsAction="ifRoom"/>
+
+    <!--항상(always) 공간이 있다면 표시되는 메뉴를 만들고 아이콘(이미지)를 입힘, 검색기능 추가(여기서는 텍스트 입력칸만 만듬-->
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+</menu>
